@@ -455,6 +455,7 @@ a:focus {
 
 .slider_section #customCarousel1 {
   width: 100%;
+  height: 78%;
   position: unset;
 }
 
@@ -519,10 +520,11 @@ a:focus {
 
 .slider_section .img-box img {
   width: 100%;
+  
 }
 
 .slider_section .carousel-indicators {
-  position: unset;
+  position: relative;
   margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -530,7 +532,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 45px;
+          top: 45%;
 }
 
 .slider_section .carousel-indicators li {
