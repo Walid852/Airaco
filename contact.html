@@ -13,7 +13,18 @@
   <meta name="author" content="" />
 
   <title>Fonicy</title>
+  <script>
+    function sendMail()
+{
+   var mailMessage=document.getElementById('Message').value;
+   var mailPhone=document.getElementById('Phone').value;
+   var mailName=document.getElementById('Name').value;
+   var mailToEmail=document.getElementById('Email').value;
+   var fullMailBody="Hi I am "+mailName+"  and My Phone is: "+mailPhone+"  and My Message is: "+mailMessage;
 
+   window.location="mailto:newemailfortesting65@gmail.com?subject=Mail from Airco websit&body="+fullMailBody;
+}
+  </script>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -160,19 +171,19 @@
           <div class="form_container">
             <form action="">
               <div>
-                <input type="text" placeholder="Your Name" />
+                <input type="text" id="Name" placeholder="Your Name" />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" id="Phone" placeholder="Phone Number" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" id="Email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" id="Message" class="message-box" placeholder="Message" />
               </div>
               <div class="btn_box">
-                <button>
+                <button onclick="sendMail();">
                   SEND
                 </button>
               </div>

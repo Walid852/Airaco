@@ -13,8 +13,18 @@
   <meta name="author" content="" />
 
   <title>Fonicy</title>
+  <script>
+    function sendMail()
+{
+   var mailMessage=document.getElementById('Message').value;
+   var mailPhone=document.getElementById('Phone').value;
+   var mailName=document.getElementById('Name').value;
+   var mailToEmail=document.getElementById('Email').value;
+   var fullMailBody="Hi I am "+mailName+"  and My Phone is: "+mailPhone+"  and My Message is: "+mailMessage;
 
-
+   window.location="mailto:newemailfortesting65@gmail.com?subject=Mail from Airco websit&body="+fullMailBody;
+}
+  </script>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -654,7 +664,7 @@
   <!-- end why us section -->
 
   <!-- contact section -->
-  <section class="contact_section layout_padding-bottom">
+  <section class="contact_section layout_padding">
     <div class="container-fluid">
       <div class="col-lg-4 col-md-5 offset-md-1">
         <div class="heading_container">
@@ -668,19 +678,19 @@
           <div class="form_container">
             <form action="">
               <div>
-                <input type="text" placeholder="Your Name" />
+                <input type="text" id="Name" placeholder="Your Name" />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" id="Phone" placeholder="Phone Number" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" id="Email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" id="Message" class="message-box" placeholder="Message" />
               </div>
               <div class="btn_box">
-                <button>
+                <button onclick="sendMail();">
                   SEND
                 </button>
               </div>
@@ -688,10 +698,10 @@
           </div>
         </div>
         <div class="col-lg-7 col-md-6 px-0">
-          <div class="map_container" style="display: none;">
+          <div class="map_container">
             <div class="map">
               <!--<div id="googleMap"></div>-->
-              <img style="margin: 0px 200px;width: 55%;height: 88%;" src="images/contactUs.png" alt="">
+              <img style="width: 55%;height: 88%;" src="images/contactUs.png" alt="">
             </div>
           </div>
         </div>
@@ -840,7 +850,7 @@
     </div>
   </footer>
   <!-- footer section -->
-
+  
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
