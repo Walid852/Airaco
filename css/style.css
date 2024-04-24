@@ -249,7 +249,7 @@ a:focus {
 
 .header_section .header_bottom {
   background-color: #ffffff;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .header_section .header_bottom .container-fluid {
@@ -454,7 +454,7 @@ a:focus {
 }
 
 .slider_section #customCarousel1 {
-  width: 100%;
+  /*width: 100%;*/
   height: 78%;
   position: unset;
 }
@@ -550,7 +550,7 @@ a:focus {
 }
 
 .service_section {
-  background-color: #afc7e1;
+  background-color: #d8ecf9;
   color: #001a37;
   position: relative;
 }
@@ -634,11 +634,13 @@ a:focus {
 
 .about_section .img-box::before {
   left: 0;
-  z-index: 3;
+  z-index: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-
+.imaggo {
+  height: 216px;
+}
 .about_section .img-box::after {
   right: 0;
   z-index: 1;
@@ -668,7 +670,9 @@ a:focus {
 }
 .project_section{
   padding: 25px;
-    background-color: #b7b7b7;
+  background-color: #ffffff;
+    color: #001a37;
+    font-weight: bold;
 }
 .project_section .heading_container {
   margin-bottom: 45px;
@@ -812,7 +816,8 @@ a:focus {
   /*background-image: url(../images/client-bg.jpg);
   background-size: cover;
   background-attachment: fixed;*/
-  background-color: #08243d;
+  background-color: #d8ecf9;
+    color: #001a37;
   color: #000;
 }
 
@@ -910,7 +915,10 @@ a:focus {
   height: 20px;
   background-color: #ffffff;
 }
-
+.why_us_section{
+  background-color: #ffffff;
+  color: #001a37;
+}
 .why_us_section .why_us_container .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -982,6 +990,8 @@ a:focus {
 
 .contact_section {
   position: relative;
+  background-color: #d8ecf9;
+  color: #001a37;
 }
 
 .contact_section .heading_container {
@@ -1071,7 +1081,7 @@ a:focus {
 .info_section {
   background-color: #252525;
   color: #ffffff;
-  padding: 45px 0;
+  padding: 20px 0;
 }
 
 .info_section .contact_nav {
@@ -1226,7 +1236,7 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 25px;
+  /*margin-top: 25px;*/
 }
 
 .info_section .info_bottom .social_box a {
