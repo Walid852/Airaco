@@ -58,23 +58,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html" data-i18n="home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
+                  <a class="nav-link" href="service.html" data-i18n="services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="about.html" data-i18n="about"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="project.html">Project</a>
+                  <a class="nav-link" href="project.html" data-i18n="projects">Project</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Client List</a>
+                  <a class="nav-link" href="testimonial.html" data-i18n="clientlist">Client List</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link" href="contact.html" data-i18n="contact">Contact Us</a>
                 </li>
+                
+                
                 <!--<li class="nav-item">
                   <a class="nav-link" href="#"> Login</a>
                 </li>
@@ -90,7 +92,17 @@
                 </a>
               </div>-->
             </div>
+            <div class="lang_box dropdown">
+                <select class="p-1 mt-2" id="hh">
+                  <option value="en" data-i18n="english">English</option>
+                  <option value="ar" data-i18n="arabic">Arabic</option>
+                </select>
+              
+              
+            </div>
+
           </nav>
+        
         </div>
       </div>
     </header>
@@ -103,21 +115,21 @@
   <section class="project_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2 data-i18n="projects">
           Projects
         </h2>
       </div>
       <div class="carousel-wrap ">
         <div class="filter_box">
-          <h6>
+          <h6 data-i18n="projectsCategory">
             Category filter
           </h6>
           <nav class="owl-filter-bar">
-            <a href="#" class="item active" data-owl-filter="*">All</a>
-            <a href="#" class="item" data-owl-filter=".painting">Manufacturing and shaping</a>
-            <a href="#" class="item" data-owl-filter=".reconstruction">mechanical maintenance </a>
-            <a href="#" class="item" data-owl-filter=".repair">installing water pipeline </a>
-            <a href="#" class="item" data-owl-filter=".residential">Toshka project </a>
+            <a href="#" class="item active" data-owl-filter="*" data-i18n="projectsCategoryall">All</a>
+            <a href="#" class="item" data-owl-filter=".painting" data-i18n="projects1">Manufacturing and shaping</a>
+            <a href="#" class="item" data-owl-filter=".reconstruction" data-i18n="projects2">mechanical maintenance </a>
+            <a href="#" class="item" data-owl-filter=".repair" data-i18n="projects3">installing water pipeline </a>
+            <a href="#" class="item" data-owl-filter=".residential" data-i18n="projects4">Toshka project </a>
           </nav>
         </div>
 
@@ -131,10 +143,10 @@
                 </a>
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="projects1">
                   Manufacturing and shaping
                 </h5>
-                <p>
+                <p data-i18n="projects1content">
                   Manufacturing and shaping
                   a tank according to the
                   required engineering
@@ -154,10 +166,10 @@
                 </a>
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="projects2">
                   mechanical maintenance
                 </h5>
-                <p>
+                <p data-i18n="projects2content">
                   Performing mechanical
                   maintenance on the motor
                   and gearbox of the cement
@@ -178,10 +190,10 @@
                 </a>
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="projects3">
                   installing water pipeline
                 </h5>
-                <p>
+                <p data-i18n="projects3content">
                   The Beni Suef - Minya project
                   involved installing water
                   pipeline of various diameters
@@ -199,10 +211,10 @@
                 </a>
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="projects4">
                   Toshka project
                 </h5>
-                <p>
+                <p data-i18n="projects4content">
                   The Toshka project in Aswan
                   involved assembling and
                   installing a water lifting station to
@@ -286,6 +298,7 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
+  <script src="script.js" type="module"></script>
   <!-- End Google Map -->
 
 </body>

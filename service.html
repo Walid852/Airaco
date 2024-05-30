@@ -58,23 +58,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html" data-i18n="home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
+                  <a class="nav-link" href="service.html" data-i18n="services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="about.html" data-i18n="about"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="project.html">Project</a>
+                  <a class="nav-link" href="project.html" data-i18n="projects">Project</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Client List</a>
+                  <a class="nav-link" href="testimonial.html" data-i18n="clientlist">Client List</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link" href="contact.html" data-i18n="contact">Contact Us</a>
                 </li>
+                
+                
                 <!--<li class="nav-item">
                   <a class="nav-link" href="#"> Login</a>
                 </li>
@@ -90,7 +92,17 @@
                 </a>
               </div>-->
             </div>
+            <div class="lang_box dropdown">
+                <select class="p-1 mt-2" id="hh">
+                  <option value="en" data-i18n="english">English</option>
+                  <option value="ar" data-i18n="arabic">Arabic</option>
+                </select>
+              
+              
+            </div>
+
           </nav>
+        
         </div>
       </div>
     </header>
@@ -104,10 +116,10 @@
     <div class="service_container">
       <div class="container ">
         <div class="heading_container">
-          <h2>
+          <h2 data-i18n="services">
             Services
           </h2>
-          <p>
+          <p data-i18n="servicestitle">
             The Company Provides A Variety Of Services Across All Industries To Achieve The Goal Of Developing And Increasing Productivity For The Client
           </p>
         </div>
@@ -121,11 +133,11 @@
             ">
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="services1">
                   Mechanical
                   Maintenance                  
                 </h5>
-                <p>
+                <p data-i18n="services1content">
                   Performing Mechanical Maintenance On
                   Motors And Gearboxes, Including Changing
                   Bearings And Seals, Adjusting The Limit
@@ -144,19 +156,19 @@
             ">
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="services2">
                   WELDING
                   WORKS
                 </h5>
-                <p>
+                <p data-i18n="services2content">
                   There Are Many Welding Methods
                   Available Depending On The Job
                   Requirement
                 </p>
-                <h6>1 - Argon Welding</h6>
-                <h6>2 - Co2 Welding</h6> 
-                <h6>3 - Electric Arc Welding</h6>
-                <h6>4 - All Types Of Welding Techniques</h6> 
+                <h6 data-i18n="services2content1">1 - Argon Welding</h6>
+                <h6 data-i18n="services2content2">2 - Co2 Welding</h6> 
+                <h6 data-i18n="services2content3">3 - Electric Arc Welding</h6>
+                <h6 data-i18n="services2content4">4 - All Types Of Welding Techniques</h6> 
               </div>
             </div>
           </div>
@@ -166,11 +178,11 @@
                 <img src="images/s1.png" alt="">
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="services3">
                     IMPLEMENTATION OF
                     INDUSTRIAL PROJECTS
                 </h5>
-                <p>
+                <p data-i18n="services3content">
                   Implementing Industrial Projects
                   According To The Engineering
                   Drawings For Each Project, And
@@ -187,11 +199,11 @@
                 <img src="images/s4.png" alt="">
               </div>
               <div class="detail-box">
-                <h5>
+                <h5 data-i18n="services4">
                   RENEWAL AND
                   REFURBISHMENT
                 </h5>
-                <p>
+                <p data-i18n="services4content">
                   Removing The Part To Be Replaced
                   Using A Cutting Torch Or Grinder, And
                   Designing And Installing The New
@@ -279,6 +291,7 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
+  <script src="script.js" type="module"></script>
   <!-- End Google Map -->
 
 </body>
